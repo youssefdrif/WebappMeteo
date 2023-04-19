@@ -15,7 +15,7 @@ use App\Http\Controllers\WeatherController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome');        //default route
 });
 
 Route::get('/weather', [WeatherController::class, 'index']);
